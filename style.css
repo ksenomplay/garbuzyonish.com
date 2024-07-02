@@ -1,0 +1,260 @@
+/* Стиль для body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    transition: .1s;
+}
+
+a {
+    text-decoration: none;
+    color: #aaaaaa;
+    text-decoration-line: underline;
+    text-decoration-color: #777;
+    text-decoration-thickness: 2px;
+}
+
+a:hover {
+    color: #777;
+}
+
+/* Заголовки */
+h1,
+h2,
+h3 {
+    color: #fff;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Текст */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Навигационное меню в заголовке */
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Стили кнопок */
+
+/* Простая тёмная кнопка */
+.button-simple {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-simple:hover {
+    background-color: #555;
+}
+
+/* Тёмная кнопка с эффектом при наведении */
+.button-hover {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-hover:hover {
+    background-color: #555;
+}
+
+/* Тёмная кнопка с тенью */
+.button-shadow {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button-shadow:hover {
+    background-color: #555;
+}
+
+/* Тёмная кнопка с градиентом */
+.button-gradient {
+    background: linear-gradient(to right, #333, #555);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-gradient:hover {
+    background: linear-gradient(to right, #555, #777);
+}
+
+/* Кнопка с рамкой */
+.button-border {
+    background-color: transparent;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.button-border:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+/* Стили для контейнера новостей */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Стили для блоков с новостями */
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item {
+    width: calc(33.33% - 20px);
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Стили для заголовков новостей */
+.news-item h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* Стили для описания новостей */
+.news-item p {
+    color: #fff;
+}
+
+/* Стили для кнопок подробнее */
+.news-item .button-simple {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.news-item .button-simple:hover {
+    background-color: #777;
+}
+
+/* Стили для формы контактов */
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
